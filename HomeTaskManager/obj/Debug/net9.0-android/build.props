@@ -27,5 +27,5 @@ androidpackagenamingpolicy=lowercasecrc64
 _nugetassetsfilehash=82fa7d7e1fdfc330b8d2e4422f8c9bf2011c226b7fb828587ce7308b93d08c8e
 typemapkind=strings-asm
 androidmanifestplaceholders=
-projectfullpath=c:\coding\software engineering\ada-lovelace\hometaskmanager\hometaskmanager.csproj
+projectfullpath=c:\coding\software engineering\ada-lovelace-1\hometaskmanager\hometaskmanager.csproj
 androidusedesignerassembly=true

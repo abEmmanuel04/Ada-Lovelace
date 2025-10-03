@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Coding\\Software Engineering\\Ada-Lovelace\\HomeTaskManager\\HomeTaskManager.csproj": {}
+    "C:\\Coding\\Software Engineering\\Ada-Lovelace-1\\HomeTaskManager\\HomeTaskManager.csproj": {}
   },
   "projects": {
-    "C:\\Coding\\Software Engineering\\Ada-Lovelace\\HomeTaskManager\\HomeTaskManager.csproj": {
+    "C:\\Coding\\Software Engineering\\Ada-Lovelace-1\\HomeTaskManager\\HomeTaskManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Coding\\Software Engineering\\Ada-Lovelace\\HomeTaskManager\\HomeTaskManager.csproj",
+        "projectUniqueName": "C:\\Coding\\Software Engineering\\Ada-Lovelace-1\\HomeTaskManager\\HomeTaskManager.csproj",
         "projectName": "HomeTaskManager",
-        "projectPath": "C:\\Coding\\Software Engineering\\Ada-Lovelace\\HomeTaskManager\\HomeTaskManager.csproj",
+        "projectPath": "C:\\Coding\\Software Engineering\\Ada-Lovelace-1\\HomeTaskManager\\HomeTaskManager.csproj",
         "packagesPath": "C:\\Users\\logan\\.nuget\\packages\\",
-        "outputPath": "C:\\Coding\\Software Engineering\\Ada-Lovelace\\HomeTaskManager\\obj\\",
+        "outputPath": "C:\\Coding\\Software Engineering\\Ada-Lovelace-1\\HomeTaskManager\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [

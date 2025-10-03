@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HomeTaskManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ccbeb18aca3da71e98b4d6c7b2a03627922e25cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+517fd60ad3f5bfb1f549cb27710db0315eccc9ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("HomeTaskManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HomeTaskManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

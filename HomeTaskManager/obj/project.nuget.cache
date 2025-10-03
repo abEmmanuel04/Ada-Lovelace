@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9MYEBgFZjIs=",
+  "dgSpecHash": "EoC6FgavZlY=",
   "success": true,
-  "projectFilePath": "C:\\Coding\\Software Engineering\\Ada-Lovelace\\HomeTaskManager\\HomeTaskManager.csproj",
+  "projectFilePath": "C:\\Coding\\Software Engineering\\Ada-Lovelace-1\\HomeTaskManager\\HomeTaskManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\logan\\.nuget\\packages\\googlegson\\2.13.0.1\\googlegson.2.13.0.1.nupkg.sha512",
     "C:\\Users\\logan\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.5\\microsoft.extensions.configuration.9.0.5.nupkg.sha512",
