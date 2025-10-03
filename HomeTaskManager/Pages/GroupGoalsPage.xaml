@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:HomeTaskManager.Pages"
+             x:Class="HomeTaskManager.Pages.GroupGoalsPage"
+             Title="Group Goals"
+             x:Name="GroupGoalsPageView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back" Clicked="OnBackClicked" Priority="0" Order="Primary" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="24">
+            <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto">
+                <Label Text="Group Goals" FontAttributes="Bold" FontSize="28" />
+                <Button Text="New Goal"
+                        Command="{Binding AddGoalCommand}"
+                        ImageSource="add_icon.png"
+                        ContentLayout="Left,10"
+                        Padding="18,12"
+                        CornerRadius="24"
+                        BackgroundColor="#FFE158"
+                        TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource PrimaryDarkText}}" />
+            </Grid>
+            <Label Text="Keep everyone aligned by tracking what the group is focusing on this week." FontSize="16" TextColor="{StaticResource Gray600}" />
+
+            <VerticalStackLayout BindableLayout.ItemsSource="{Binding Sections}" Spacing="32">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="pages:GroupGoalSection">
+                        <VerticalStackLayout Spacing="12">
+                            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="12">
+                                <Frame WidthRequest="40" HeightRequest="40" CornerRadius="20" Padding="0" HasShadow="False" BackgroundColor="#FFE158">
+                                    <Image Source="dotnet_bot.png" Aspect="AspectFit" Margin="6" />
+                                </Frame>
+                                <VerticalStackLayout Spacing="2">
+                                    <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="20" />
+                                    <Label Text="{Binding Subtitle}" FontSize="14" TextColor="{StaticResource Gray600}" />
+                                </VerticalStackLayout>
+                            </Grid>
+
+                            <VerticalStackLayout BindableLayout.ItemsSource="{Binding Goals}" Spacing="12">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate x:DataType="pages:GroupGoal">
+                                        <Frame Padding="16" HasShadow="False" BackgroundColor="{StaticResource Secondary}" CornerRadius="16">
+                                            <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,Auto" ColumnSpacing="12">
+                                                <Label Text="{Binding Title}" FontAttributes="Bold" />
+                                                <Label Grid.Column="1" Text="{Binding PointsDisplay}" TextColor="{StaticResource Gray600}" />
+
+                                                <Label Grid.Row="1" Text="{Binding Category}" FontSize="12" TextColor="{StaticResource Gray600}" />
+                                                <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalOptions="End" Spacing="8">
+                                                    <Label Text="{Binding ProgressDisplay}" FontSize="12" TextColor="{StaticResource Gray600}" />
+                                                    <ProgressBar Progress="{Binding Progress}" WidthRequest="120" HeightRequest="6" VerticalOptions="Center" />
+                                                </StackLayout>
+                                            </Grid>
+                                        </Frame>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </VerticalStackLayout>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
