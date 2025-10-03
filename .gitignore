@@ -1,0 +1,21 @@
+# Build outputs
+bin/
+obj/
+
+# IDE cruft
+.vscode/
+*.user
+*.userprefs
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.nuspec
+
+# Mobile artifacts
+*.apk
+*.aab
+*.ipa
